@@ -1,8 +1,8 @@
-package Games;
 
 import java.applet.Applet;
-
-import java.awt.Graphics;
+import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 public class racket extends Applet {
 
@@ -10,7 +10,7 @@ public class racket extends Applet {
    
     }
 
-    public void paint (Graphics g) {
+    public void paint (final Graphics g) {
 
     }
 
