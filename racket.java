@@ -1,5 +1,20 @@
+package Games;
 
+import java.applet.Applet;
 
-public class racket {
-    
+import java.awt.Graphics;
+
+public class racket extends Applet {
+
+    public void init () {
+   
+    }
+
+    public void paint (Graphics g) {
+
+    }
+
+    public void update (Graphics g) {
+
+    }
 }
