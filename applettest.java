@@ -1,30 +1,19 @@
-import java.applet.*;
-import java.awt.*;
+import java.applet.Applet;
+import java.awt.Color;
+import java.awt.Graphics;
 
-public static void main(String[] args) {
-
-/*
-<applet code="SimpleApplet.class" 
-         height="250" width="250">
-</applet>
-*/
 public class applettest extends Applet {
-  public void init() {
-  }
-
-  public void start() {
-  }
-
-  public void stop() {
-  }
-
-  public void destroy() {
-  }
 
   public void paint(Graphics g) {
     g.setColor(Color.RED);
-    g.drawString("Welcome to the applet box!", 50, 100);
-        }
- }
+    g.drawString("Welcome to the applet box!", 100, 100);
+  
+    }
 }
+
+/*
+ <html>
+ <applet code="applettest.class" Codebase="" width=300 height=400></applet>
+ </html>
+ */ 
 
