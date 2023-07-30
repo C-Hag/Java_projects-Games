@@ -5,6 +5,10 @@ import javax.swing.*;
 
 public class BouncingBall extends Rectangle {
 
+    Random random;
+    int xVelocity;
+    int yVelocity; 
+
     BouncingBall(){
 
     }
@@ -24,4 +28,5 @@ public class BouncingBall extends Rectangle {
     public void draw(Graphics g) {
 
     }
+
 }

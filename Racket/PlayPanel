@@ -11,8 +11,18 @@ public class PlayPanel extends Jpanel implements Runnable {
     static final int BouncingBall_DIAMETER = 20;
     static final int MovingRackets_WIDTH = 25;
     static final int MovingRackets_HEIGHT = 25;
+    static final int gameThread;
+    Image image;
+    Graphics graphics;
+    Random random;
+    MovingRackets racket1;
+    MovingRackets racket2;
+    BouncingBall ball;
+    Score score;
 
      PlayPanel (){
+         newMovingRackets();
+         newBouncingBall();
 
      }
 

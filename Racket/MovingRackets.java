@@ -5,6 +5,9 @@ import javax.swing.*;
 
 public class MovingRackets extends Rectangle {
 
+    int id;
+    int yVelocity;
+
     MovingRackets(){
 
     }
