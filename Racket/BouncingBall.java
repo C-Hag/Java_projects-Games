@@ -5,4 +5,8 @@ import javax.swing.*;
 
 public class BouncingBall {
 
+    BouncingBall(){
+        
+    }
+
 }
