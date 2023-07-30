@@ -13,8 +13,20 @@ public class MovingRackets {
             
     }
 
-    public void keyRelased(KeyEvent e) {
+    public void keyReleased(KeyEvent e) {
             
+    }
+
+    public void setYdirection(int Ydirection) {
+        
+    }
+
+    public void move() {
+        
+    }
+
+    public void draw(Graphics g) {
+        
     }
 
 }
