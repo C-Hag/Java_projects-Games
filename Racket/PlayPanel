@@ -6,6 +6,38 @@ import javax.swing.*;
 public class PlayPanel {
 
      PlayPanel (){
+
+     }
+
+     public void newBouncingBall() {
+
+     }
+
+     public void newMovingRackets() {
+
+     }
+
+     public void paint(Graphics g) {
+
+     }
+
+     public void draw(Graphics g) {
+
+     }
+
+     public void checkCollision() {
+        
+     }
+
+     public void run() {
+
+     }
+
+     public class AL extendes KeyAdapter() {
+        public void keyPressed(KeyEvent e) {
+            
+        }
+
         
      }
 }
