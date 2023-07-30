@@ -9,4 +9,10 @@ public class PlayFrame extends JFrame {
 
     }
 
-}
+    PlayPanel panel = new PlayPanel();
+
+    PlayFrame(){
+        
+    } 
+
+} 

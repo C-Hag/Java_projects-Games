@@ -5,6 +5,9 @@ import javax.swing.*;
 
 public class PlayPanel extends Jpanel implements Runnable {
 
+    static final int GAME_WIDTH = 1000; 
+    static final int GAME_HEIGHT = (GAME_WIDTH* (5/9));
+
      PlayPanel (){
 
      }
