@@ -3,6 +3,6 @@ import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
 
-public class PlayPanel {
+public class Score {
 
 }
