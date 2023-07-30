@@ -6,7 +6,15 @@ import javax.swing.*;
 public class MovingRackets {
 
     MovingRackets(){
-        
+
+    }
+
+    public void keyPressed(KeyEvent e) {
+            
+    }
+
+    public void keyRelased(KeyEvent e) {
+            
     }
 
 }
