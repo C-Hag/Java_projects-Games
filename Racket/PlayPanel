@@ -9,6 +9,8 @@ public class PlayPanel extends Jpanel implements Runnable {
     static final int GAME_HEIGHT = (int)GAME_WIDTH* (5/9);
     static final Dimension SCREEN_SIZE = new Dimension(GAME_WIDTH,GAME_HEIGHT);
     static final int BouncingBall_DIAMETER = 20;
+    static final int MovingRackets_WIDTH = 25;
+    static final int MovingRackets_HEIGHT = 25;
 
      PlayPanel (){
 
