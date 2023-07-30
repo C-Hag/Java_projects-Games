@@ -3,7 +3,7 @@ import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
 
-public class BouncingBall {
+public class BouncingBall extends Rectangle {
 
     BouncingBall(){
 
@@ -22,6 +22,6 @@ public class BouncingBall {
     }
 
     public void draw(Graphics g) {
-        
+
     }
 }
