@@ -38,6 +38,8 @@ public class PlayPanel extends Jpanel implements Runnable {
      }
 
      public void newMovingRackets() {
+        racket1 = new MovingRackets(0,(GAME_HEIGHT/2)-(MovingRackets_HEIGHT/2),MovingRackets_WIDTH,MovingRackets_HEIGHT,1);
+        racket2 = new MovingRackets(GAME_WIDTH-MovingRackets(GAME_HEIGHT/2)-(MovingRackets_HEIGHT/2),MovingRackets_WIDTH,MovingRackets_HEIGHT,1);
 
      }
 
