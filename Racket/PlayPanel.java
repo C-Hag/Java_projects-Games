@@ -116,9 +116,14 @@ public class PlayPanel extends Jpanel implements Runnable {
                score.player2++;
                newMovingRackets();
                newBouncingBall();
-               System.out.println(score.player2);
-               
+               System.out.println("Player 2:"+score.player2);
+
          }
+         if(ball.x >= GAME_WIDTH-BouncingBall_DIAMETER) {
+            score.player1++;
+            newMovingRackets();
+            newBouncingBall();
+            System.out.println("Player 1:"+score.player1);
      }
 
      public void run() {
