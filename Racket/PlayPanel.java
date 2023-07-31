@@ -57,6 +57,7 @@ public class PlayPanel extends Jpanel implements Runnable {
          racket1.draw(g);
          racket2.draw(g);
          ball.draw(g);
+         score.draw,(g);
      }
 
      public void move() {
