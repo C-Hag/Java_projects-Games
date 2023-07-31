@@ -34,6 +34,8 @@ public class PlayPanel extends Jpanel implements Runnable {
      }
 
      public void newBouncingBall() {
+            //random = new Random();
+            ball = new BouncingBall((GAME_WIDTH));
 
      }
 
@@ -56,7 +58,22 @@ public class PlayPanel extends Jpanel implements Runnable {
          racket2.draw(g);
      }
 
+     public void move() {
+         racket1.move();
+         racket2.move();
+         ball.move();
+     }
+
      public void checkCollision() {
+         //STOPS THE RACKETS AT THE WINDOW EDGES
+            if(racket1.y<=0)
+                  racket1.y=0;
+            if(racket1.y >= (GAME_HEIGHT-MovingRackets_HEIGHT))
+                  racket1.y = GAME_HEIGHT-MovingRackets_HEIGHT;
+            if(racket2.y<=0)
+                  racket2.y=0;
+            if(racket2.y >= (GAME_HEIGHT-MovingRackets_HEIGHT))
+                  racket2.y = GAME_HEIGHT-MovingRackets_HEIGHT;
         
      }
 
