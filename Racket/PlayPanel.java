@@ -85,11 +85,14 @@ public class PlayPanel extends Jpanel implements Runnable {
      public class AL extendes KeyAdapter() {
 
         public void keyPressed(KeyEvent e) {
+            racket1.keyPressed(e);
+            racket2.keyPressed(e);
 
         }
 
         public void keyReleased(KeyEvent e) {
-
+            racket1.keyReleased(e);
+            racket2.keyReleased(e);
         }
 
         
