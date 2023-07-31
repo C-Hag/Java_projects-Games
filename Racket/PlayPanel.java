@@ -35,7 +35,7 @@ public class PlayPanel extends Jpanel implements Runnable {
 
      public void newBouncingBall() {
             //random = new Random();
-            ball = new BouncingBall((GAME_WIDTH/2)-(BouncingBall_DIAMETER/2),(GAME_HEIGHT/2)-(BouncingBall_DIAMETER/2),BouncingBall_DIAMETER,BouncingBall_DIAMETER);
+            ball = new BouncingBall((GAME_WIDTH/2)-(BouncingBall_DIAMETER/2),random.nextInt(GAME_HEIGHT-BouncingBall_DIAMETER),BouncingBall_DIAMETER,BouncingBall_DIAMETER);
 
      }
 
