@@ -6,7 +6,7 @@ import javax.swing.*;
 public class PlayPanel extends Jpanel implements Runnable {
 
     static final int GAME_WIDTH = 1000;  
-    static final int GAME_HEIGHT = (int)GAME_WIDTH* (0.5555);
+    static final int GAME_HEIGHT = (int)GAME_WIDTH * (0.5555);
     static final Dimension SCREEN_SIZE = new Dimension(GAME_WIDTH,GAME_HEIGHT);
     static final int BouncingBall_DIAMETER = 20;
     static final int MovingRackets_WIDTH = 25;
@@ -29,8 +29,7 @@ public class PlayPanel extends Jpanel implements Runnable {
          this.setPreferredSize(SCREEN_SIZE);   
 
          gameThread = new Thread(this);
-         gameThread.start
-
+         gameThread.start();
      }
 
      public void newBouncingBall() {
@@ -58,6 +57,7 @@ public class PlayPanel extends Jpanel implements Runnable {
          racket2.draw(g);
          ball.draw(g);
          score.draw,(g);
+Toolkit.getDefaultToolkit().sync();
      }
 
      public void move() {
@@ -69,7 +69,7 @@ public class PlayPanel extends Jpanel implements Runnable {
      public void checkCollision() {
 
          //Bouncing the ball of the edges (top & bottom)
-         if ball.y <=0 {
+         if (ball.y <=0) {
             ball.setYDirection(-ball.yVelocity);
          }
          if(ball.y >= GAME_HEIGHT-BouncingBall_DIAMETER) {
@@ -117,7 +117,7 @@ public class PlayPanel extends Jpanel implements Runnable {
                score.player2++;
                newMovingRackets();
                newBouncingBall();
-               System.out.println("Player 2:"+score.player2);
+               System.out.println("Player 2: "+score.player2);
 
          }
          if(ball.x >= GAME_WIDTH-BouncingBall_DIAMETER) {
@@ -125,15 +125,15 @@ public class PlayPanel extends Jpanel implements Runnable {
             newMovingRackets();
             newBouncingBall();
             System.out.println("Player 1:"+score.player1);
-     }
+         }  
 
      public void run() {
          //game loop
          long lastTime = System.nanoTime();
          double amountOfTicks = 60.0;
-         double ns = 1000000000 / amountOfTicks
+         double ns = 1000000000 / amountOfTicks;
          double delta = 0;
-         while(true){
+         while(true) {
             long now = System.nanoTime();
             delta += (now -lastTime)/ns;
             lastTime = now;
@@ -142,19 +142,16 @@ public class PlayPanel extends Jpanel implements Runnable {
                checkCollision();
                repaint();
                delta--;
-               System.out.println("TEST");
             }
 
-         }
-
-     }
+         }  
+      }
 
      public class AL extendes KeyAdapter() {
-
-        public void keyPressed(KeyEvent e) {
+          public void keyPressed(KeyEvent e) {
             racket1.keyPressed(e);
             racket2.keyPressed(e);
-
+            
         }
 
         public void keyReleased(KeyEvent e) {

@@ -1,6 +1,4 @@
 import java.awt.*;
-import java.awt.event.*;
-import java.util.*;
 import javax.swing.*;
 
 public class PlayFrame extends JFrame {
@@ -13,11 +11,10 @@ public class PlayFrame extends JFrame {
         this.setTitle("Racket Game");
         this.setResizable(false);
         this.setBackground(Color.black);
-        this.setDefaultCloseOperation(JFrame.EX.EXIT_ON_CLOSE);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
         this.setVisible(true);
         this.setLocationRelativeTo(null);
-        
     } 
 
 } 

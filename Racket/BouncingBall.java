@@ -1,14 +1,12 @@
 import java.awt.*;
-import java.awt.event.*;
 import java.util.*;
-import javax.swing.*;
 
 public class BouncingBall extends Rectangle {
 
     Random random;
     int xVelocity;
     int yVelocity; 
-    int initialSpeed = 2.5;
+    int initialSpeed = 2;
 
     BouncingBall(int x, int y, int width, int height){
         super(x,y,width,height);
@@ -40,7 +38,7 @@ public class BouncingBall extends Rectangle {
 
     public void draw(Graphics g) {
         g.setColor(Color.white);
-        g.setfillOval(x, y, height, width);
+        g.fillOval(x, y, height, width);
 
     }
 
