@@ -78,7 +78,7 @@ public class PlayPanel extends Jpanel implements Runnable {
 
          //Bounce the ball of the rackets
          if (ball.intersects(racket1)) {
-            ball.xVelocity = Math.abs(ball.xVelocity)
+            ball.xVelocity = Math.abs(ball.xVelocity);
             ball.xVelocity++; //Options for increased difficulty
             if(ball.yVelocity>0)
                ball.yVelocity++; //Even more difficulty
@@ -90,7 +90,7 @@ public class PlayPanel extends Jpanel implements Runnable {
          }
 
          if (ball.intersects(racket2)) {
-            ball.xVelocity = Math.abs(ball.xVelocity)
+            ball.xVelocity = Math.abs(ball.xVelocity);
             ball.xVelocity++; //Options for increased difficulty
             if(ball.yVelocity>0)
                ball.yVelocity++; //Even more difficulty
@@ -159,9 +159,8 @@ public class PlayPanel extends Jpanel implements Runnable {
 
         public void keyReleased(KeyEvent e) {
             racket1.keyReleased(e);
-            racket2.keyReleased(e);
-        }
-
-        
-     }
+            racket2.keyReleased(e); 
+         }
+      }
+   }
 }

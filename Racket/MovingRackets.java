@@ -88,9 +88,8 @@ public class MovingRackets extends Rectangle {
             g.setColor(Color.yellow);
         else
             g.setColor(Color.green)
-        g.fillRect(x, y, width, height);    
+        g.fillRect(x, y, width, height); 
         
-
+        }    
     }
-
 }

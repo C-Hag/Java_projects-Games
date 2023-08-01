@@ -5,7 +5,7 @@ import javax.swing.*;
 
 public class Racket {
 
-    public static void name(String){} args{
+    public static void Racket(String){} args{
         // CREATE AUTOMATIC METHOD SUB 
 
         PlayFrame frame = new PlayFrame();
