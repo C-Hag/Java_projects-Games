@@ -1,3 +1,4 @@
+package pong;
 import java.awt.*;
 
 public class Score extends Rectangle{
@@ -17,5 +18,10 @@ public class Score extends Rectangle{
         g.drawLine(GAME_WIDTH/2, 0, GAME_WIDTH/2, GAME_HEIGHT);
         g.drawString(String.valueOf(player1/10)+String.valueOf(player1%10), (GAME_WIDTH/2)-85, 50);
         g.drawString(String.valueOf(player2/10)+String.valueOf(player2%10), (GAME_WIDTH/2)+20, 50);
+    }
+
+    public void reset() {
+        player1 = 0;
+        player2 = 0;
     }
 }
